@@ -166,6 +166,83 @@ strong {
   height: 90.4px;
 }
 
+/*---------------------------------------
+  ICON IMAGE
+-----------------------------------------*/
+.logo-image {
+  height: 160px;
+  object-fit: cover;
+}
+
+.wechat-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.wechat-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.wechat-icon:after {
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    background: url('../images/index/wechat-code.jpg') no-repeat center center / cover;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.wechat-icon:hover:after {
+    opacity: 1;
+}
+
+.tiktok-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.tiktok-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.tiktok-icon:after {
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    background: url('../images/index/tiktok-code.jpg') no-repeat center center / cover;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tiktok-icon:hover:after {
+    opacity: 1;
+}
+
+.weibo-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.weibo-icon img {
+    width: 100%;
+    height: auto;
+}
 
 /*---------------------------------------
   PRE LOADER               
