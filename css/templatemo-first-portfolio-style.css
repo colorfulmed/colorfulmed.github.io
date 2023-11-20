@@ -11,6 +11,11 @@ https://templatemo.com/tm-578-first-portfolio
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
+  --brand-red:                    #F20803;
+  --brand-yellow:                 #DEA817;
+  --brand-blue:                   #0F21FF;
+  --brand-purple:                 #4F21F7;
+  --brand-green:                  #3BE626;
   --white-color:                  #ffffff;
   --primary-color:                #535da1;
   --secondary-color:              #14B789;
@@ -22,12 +27,14 @@ https://templatemo.com/tm-578-first-portfolio
 
   --body-font-family:             'DM Sans', sans-serif;
 
-  --h1-font-size:                 62px;
+  --h1-font-size:                 50px;
   --h2-font-size:                 48px;
   --h3-font-size:                 36px;
   --h4-font-size:                 32px;
   --h5-font-size:                 24px;
   --h6-font-size:                 22px;
+  --h7-font-size:                 22px;
+  --h8-font-size:                 16px;
   --p-font-size:                  18px;
   --menu-font-size:               14px;
   --copyright-font-size:          14px;
@@ -65,13 +72,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-bold);
-  letter-spacing: -1px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 2px;
 }
 
 h1 {
   font-size: var(--h1-font-size);
-  letter-spacing: -3px;
+  letter-spacing: 5px;
 }
 
 h2 {
@@ -95,6 +102,20 @@ h5 {
 
 h6 {
   font-size: var(--h6-font-size);
+}
+
+h7 {
+  font-size: var(--h7-font-size);
+  color: var(--dark-color);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 5px;
+}
+
+h8 {
+  font-size: var(--h8-font-size);
+  color: var(--dark-color);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 5px;
 }
 
 p {
@@ -161,6 +182,13 @@ strong {
   object-fit: cover;
 }
 
+.avatar-image-small {
+  border-radius: var(--border-radius-large);
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
 .avatar-image-large {
   width: 90.4px;
   height: 90.4px;
@@ -169,6 +197,10 @@ strong {
 /*---------------------------------------
   ICON IMAGE
 -----------------------------------------*/
+.brand-image {
+  height: 45px;
+  object-fit: cover;
+}
 .logo-image {
   height: 160px;
   object-fit: cover;
@@ -193,7 +225,7 @@ strong {
     left: -60px;
     width: 200px;
     height: 200px;
-    background: url('../images/index/wechat-code.jpg') no-repeat center center / cover;
+    background: url('../images/index/wechat_code.jpg') no-repeat center center / cover;
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -222,7 +254,7 @@ strong {
     left: -60px;
     width: 200px;
     height: 200px;
-    background: url('../images/index/tiktok-code.jpg') no-repeat center center / cover;
+    background: url('../images/index/tiktok_code.jpg') no-repeat center center / cover;
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -367,7 +399,7 @@ strong {
 }
 
 .custom-link {
-	background-color: var(--primary-color);
+	background-color: var(--brand-red);
 }
 
 .custom-link:hover {
@@ -426,6 +458,7 @@ strong {
 }
 
 .navbar-brand {
+  background: url('../images/icons/logo_land.png') no-repeat center center / cover;
   font-size: var(--h4-font-size);
   font-weight: var(--font-weight-bold);
 }
@@ -545,7 +578,7 @@ strong {
   HERO              
 -----------------------------------------*/
 .hero {
-  background: var(--secondary-color);
+  background: url('../images/banner/banner.png') no-repeat center center / cover;
   position: relative;
   overflow: hidden;
   padding-top: 330px;
@@ -578,7 +611,7 @@ strong {
 .hero-text {
   position: relative;
   z-index: 22;
-  top: 70px;
+  top: 20px;
 }
 
 .hero-image-wrap {
