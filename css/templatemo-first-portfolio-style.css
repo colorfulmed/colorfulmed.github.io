@@ -276,6 +276,23 @@ strong {
     height: auto;
 }
 
+.weibo-icon:after {
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    background: url('../images/index/weibo_code.jpg') no-repeat center center / cover;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.weibo-icon:hover:after {
+    opacity: 1;
+}
+
 /*---------------------------------------
   PRE LOADER               
 -----------------------------------------*/
