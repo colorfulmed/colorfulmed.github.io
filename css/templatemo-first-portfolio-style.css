@@ -21,6 +21,9 @@ https://templatemo.com/tm-578-first-portfolio
   --secondary-color:              #14B789;
   --section-bg-color:             #f9f9f9;
   --dark-color:                   #000000;
+  --dark2-color:                  #202020;
+  --dark3-color:                  #404040;
+  --dark4-color:                  #606060;
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
   --featured-border-color:        #727aab;
@@ -1342,3 +1345,24 @@ strong {
   }
 }
 
+/*---------------------------------------
+  Background
+-----------------------------------------*/
+.bg-round4 {
+  border: 1px solid var(--p-color);
+  border-radius: var(--border-radius-small);
+  font-size: var(--copyright-font-size);
+  font-weight: var(--font-weight-medium);
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  min-width: 70px;
+  color: var(--p-color);
+}
+
+.series-block {
+  margin-bottom: 200px;
+}
